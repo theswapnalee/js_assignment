@@ -1,0 +1,72 @@
+<html>
+/* https://docs.google.com/forms/d/e/1FAIpQLSefNpOVSbJ47_-HxZngCAA9a43B9bHeJot7CIKjrTG0kls-5Q/viewform
+JavaScript Data Types:
+JavaScript has seven types. They are as follows:
+Number
+String
+Boolean
+Undefined
+Null
+Object
+Symbol
+
+Numbers:
+
+A number data type can be an integer, a floating point value, an exponential value, a ‘NaN’ or a ‘Infinity’.
+
+1
+2
+3
+var a=250;  // integer value
+var b=25.5;  // a number containing a decimal 
+var c = 10e4 //  an exponential value which evaluates to 10*10000
+
+String:
+
+The string data type in JavaScript can be any group of characters enclosed by a single or double-quotes or by backticks.
+
+1
+2
+3
+var str1 = “This is a string1”;  
+var str2= ‘This is a string2’;
+var str3 = `This is a string3`
+
+Boolean:
+
+The boolean data type has only two values, true and false. 
+It is mostly used to check a logical condition.
+ Thus Booleans are logical data types which can be used for comparison of two variables or to check a condition.
+ typeof(true) // returns boolean
+ typeof(false) // returns boolean
+
+Undefined:
+
+Undefined data type means a variable that is not defined. 
+The variable is declared but doesn’t contain any value.
+var a;
+console.log(a); // This will return undefined.
+
+Null:
+
+The null in JavaScript is a data type that is represented by only one value, the ‘null’ itself.
+ A null value means no value.
+
+ Object:
+
+An object in JavaScript contains key-value pairs in its address. 
+When we refer to obj1, we are actually referring to the address in memory which contains the value {a: 5, b: 6}, instead of the value {a: 5, b: 6} directly.
+var obj1 = { a: 5, b: 6 };
+
+Symbol:
+
+The ‘symbol’ data type is new in es6. 
+The symbol data type defines a property of an object which is private to the object. 
+It refers to the ‘key’ of the key-value pair of an object.
+var object1 = {
+   name: ‘Shalini’,
+   age: 25,
+   city: ‘Mumbai’
+}
+var occupation=Symbol(‘engineer’);
+</html>
