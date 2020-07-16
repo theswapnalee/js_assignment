@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>This is assignment 2</title>
+    </head>    
+    <body>
+        <script>
+            // Question 1
+            alert("Hello there!")
+            let age = prompt("What is your age ?");
+            console.log(age); 
+        </script>    
+
+        <script>
+            //Question 2
+            //Strings
+            //length
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var sln = txt.length;
+
+            //indexOf()
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.indexOf("locate");
+
+            //lastIndexOf()
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.lastIndexOf("locate");
+
+            //search()
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.search("locate");
+            
+            //slice()
+            var str = "Apple, Banana, Kiwi";
+            var res = str.slice(7, 13);
+
+            //substring()
+            var str = "Apple, Banana, Kiwi";
+            var res = str.substring(7, 13);
+
+            //substr()
+            var str = "Apple, Banana, Kiwi";
+            var res = str.substr(7, 6);
+
+            //replace()
+            str = "Please visit Microsoft!";
+            var n = str.replace("Microsoft", "Apple");
+
+            //toUpperCase()
+            var text1 = "Hello World!";
+            var text2 = text1.toUpperCase();
+
+            //toLowerCase()
+            var text1 = "Hello World!";
+            var text2 = text1.toLowerCase();
+
+            //concat()
+            var text1 = "Hello";
+            var text2 = "World";
+            var text3 = text1.concat(" ", text2);
+
+            //trim()
+            var str = "       Hello World!        ";
+            alert(str.trim());
+
+            //split()
+            var txt = "a,b,c,d,e";   // String
+            txt.split(",");          // Split on commas
+            txt.split(" ");          // Split on spaces
+            txt.split("|");          // Split on pipe
+
+            //Arrays:
+            //toString()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits.toString();
+
+            //join()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+            //pop()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.pop();
+
+            //push()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.push("Kiwi");
+
+            //shift()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.shift();
+
+            //unshift()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.unshift("Lemon");
+
+            //adding element
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits[0] = "Kiwi"; 
+
+            //deleting element
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            delete fruits[0];
+
+            //splice()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.splice(2, 0, "Lemon", "Kiwi");
+
+            //concat()
+            var myGirls = ["Cecilie", "Lone"];
+            var myBoys = ["Emil", "Tobias", "Linus"];
+            var myChildren = myGirls.concat(myBoys);
+
+            //slice()
+            var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+            var citrus = fruits.slice(1);
+
+            //toString()
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits.toString();
+
+        </script>
+            
+        <button onclick="myFunction()">Are you 21+ ?</button>
+        <p id="demo"></p>
+        <script>
+            //Question 3
+            function myFunction() {
+            var txt;
+             var r = confirm("Select an option");
+             if (r == true) {
+             txt = "can drink";
+            } else {
+            txt = "cannot drink";
+            }
+            document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+    </body>
+</html>
