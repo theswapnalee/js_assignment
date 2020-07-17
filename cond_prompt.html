@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<button onclick="myFunction()">Click here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var num = prompt("Please enter a number")
+  if (num === 0) {
+                console.log("The number entered is " + num +  " and number is even");
+        }
+        else if (num % 2 === 0) {
+                console.log("The number entered is " + num +  " and number is even");   
+        }
+        else {
+                console.log("The number entered is " + num +  " and number is odd");
+    }
+} 
+
+
+var m = prompt("Please enter marks")
+// Using loops
+ if (m>=51 && m<=100){
+      console.log("Marks are " + m + " and grade is A ");
+  }
+  else if (m>=0 && m<=50){
+      console.log("Marks are " + m + " and grade is B ");
+  }
+  else { 
+      console.log("Invalid input");
+  } 
+
+// Using ternary operator
+console.log(m>=51 ? 'Grade A':'Grade B');
+
+</script>  
+</body>
+</html>
